@@ -32,6 +32,10 @@ body {
         z-index: 1000;
         transform: translateY(-140%);
         padding: 10px 14px;
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
         border-radius: 4px;
         background: #ffffff;
         color: var(--color-primary);
@@ -81,6 +85,10 @@ body {
     }
 
     & summary {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
         cursor: pointer;
         font-weight: 600;
     }
@@ -142,6 +150,16 @@ body {
                         display: flex;
                         align-items: center;
                         gap: 14px;
+                    }
+
+                    & a,
+                    & button {
+                        min-width: 44px;
+                        min-height: 44px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px 6px;
                     }
                 }
 
