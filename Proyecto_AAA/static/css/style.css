@@ -1288,3 +1288,12 @@ body {
     }
 }
 
+.hero-card--promo .promo-action {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
