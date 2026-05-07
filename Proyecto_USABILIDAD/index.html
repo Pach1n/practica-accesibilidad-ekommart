@@ -3,19 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto usabilidad | ekommart</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>ekommart | Proyecto usabilidad</title>
+    <meta name="description" content="Versión optimizada de ekommart para usabilidad, rendimiento, accesibilidad, buenas prácticas y SEO.">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="static/images/logo-vectorial-iniciales.svg" type="image/svg+xml">
+    <link rel="preload" href="static/images/Seasons newest arrivals.jpg" as="image" fetchpriority="high">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/main.js" defer></script>
 </head>
 <body>
-    <main class="landing">
-        <section class="entry-card" aria-labelledby="page-title">
-            <p class="kicker">Proyecto usabilidad</p>
-            <h1 id="page-title">ekommart</h1>
-            <p class="welcome-text">
-                Carpeta preparada para la entrega de usabilidad.
-            </p>
-            <a href="../index.html" class="link-button link-button--primary">Volver al índice</a>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header id="site-header">
+        <section id="top-bar" aria-label="Barra superior">
+            <div class="container">
+                <nav aria-label="Idioma y cuenta">
+                    <ul>
+                        <li><button class="dropdown-caret" type="button" aria-expanded="false">Español</button></li>
+                        <li><button class="dropdown-caret" type="button" aria-expanded="false">EUR</button></li>
+                        <li><a href="#user-actions">Acceder o registrarse</a></li>
+                    </ul>
+                </nav>
+
+                <p><strong>Envío internacional urgente gratuito y devoluciones sencillas</strong></p>
+
+                <nav class="social" aria-label="Redes sociales">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" aria-label="Facebook"><img src="static/images/facebook.png" alt="" aria-hidden="true" width="64" height="64" decoding="async"></a></li>
+                        <li><a href="https://twitter.com/" aria-label="Twitter"><img src="static/images/png-clipart-icon-logo-twitter-logo-twitter-logo-blue-social-media-thumbnail.png" alt="" aria-hidden="true" width="64" height="64" decoding="async"></a></li>
+                        <li><a href="https://www.instagram.com/" aria-label="Instagram"><img class="social-icon--sm" src="static/images/ig.png" alt="" aria-hidden="true" width="64" height="64" decoding="async"></a></li>
+                        <li><a href="https://www.pinterest.com/" aria-label="Pinterest"><img src="static/images/pinterest_PNG66.png" alt="" aria-hidden="true" width="64" height="36" decoding="async"></a></li>
+                        <li><a href="https://www.youtube.com/" aria-label="YouTube"><img src="static/images/images.jpeg" alt="" aria-hidden="true" width="64" height="64" decoding="async"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="header-main" aria-label="Cabecera principal">
+            <div class="container">
+                <div class="call-us">
+                    <img src="static/images/depositphotos_94420598-stock-illustration-support-vector-icon-headset-eps.jpg" alt="" aria-hidden="true" class="call-icon" width="96" height="96" decoding="async">
+                    <span class="call-label">Atención al cliente</span>
+                    <span class="call-number">+84 1800 33355</span>
+                </div>
+
+                <h1 class="sr-only">ekommart</h1>
+                <a class="brand-logo" href="../index.html" aria-label="ekommart - volver al índice de versiones">
+                    <img src="static/images/logo-web.png" alt="" aria-hidden="true" width="420" height="280" decoding="async">
+                    <span class="brand-title">ekommart</span>
+                </a>
+
+                <nav id="user-actions" class="user-actions" aria-label="Acciones de usuario">
+                    <ul>
+                        <li><button type="button" aria-label="Buscar productos"><img src="static/images/lupa.png" alt="" aria-hidden="true" width="64" height="64" decoding="async"></button></li>
+                        <li><button type="button" aria-label="Abrir cuenta de usuario"><img src="static/images/perfil.png" alt="" aria-hidden="true" width="64" height="64" decoding="async"></button></li>
+                        <li><button type="button" aria-label="Ver favoritos, 0 artículos"><img src="static/images/corazon.png" alt="" aria-hidden="true" width="64" height="64" decoding="async"></button><span class="icon-badge" aria-hidden="true">0</span></li>
+                        <li><button type="button" aria-label="Ver carrito, 0 artículos"><img src="static/images/cesta.png" alt="" aria-hidden="true" width="64" height="64" decoding="async"></button><span class="icon-badge" aria-hidden="true">0</span></li>
+                        <li><span class="cart-total">$00.0<span class="sr-only"> total del carrito: 0 dólares</span></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="primary-nav" aria-label="Menú principal">
+            <div class="container">
+                <button class="menu-toggle" type="button" aria-expanded="true" aria-controls="primary-menu">Menú</button>
+                <nav id="primary-menu" aria-label="Navegación principal">
+                    <ul>
+                        <li><a class="dropdown-caret" href="#site-header" aria-current="page">Inicio</a></li>
+                        <li><a class="dropdown-caret" href="#spring-products">Tienda</a></li>
+                        <li><a class="dropdown-caret" href="#multimedia-practice">Multimedia</a></li>
+                        <li><a href="#hero-collections">Colecciones</a></li>
+                        <li><a href="#spring-products">Ofertas</a></li>
+                        <li><a href="#site-footer">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main id="contenido-principal">
+        <section id="hero-collections" aria-labelledby="collections-title">
+            <div class="container">
+                <h2 id="collections-title" class="sr-only">Novedades y colecciones</h2>
+
+                <article class="hero-card hero-card--lead" aria-labelledby="season-title">
+                    <p>Tendencias actuales</p>
+                    <h3 id="season-title">Novedades<br>de temporada</h3>
+                    <p><a href="#spring-products">Comprar novedades de temporada</a></p>
+                </article>
+
+                <article class="hero-card hero-card--middle" aria-labelledby="simple-title">
+                    <p>Rosa soleado</p>
+                    <h3 id="simple-title">Diseño<br>simple</h3>
+                </article>
+
+                <article class="hero-card hero-card--small" aria-labelledby="bracelet-title">
+                    <p>Crochet combinado</p>
+                    <h3 id="bracelet-title">Pulsera de<br>cuentas crochet</h3>
+                </article>
+
+                <article class="hero-card hero-card--promo" aria-labelledby="earrings-title">
+                    <p class="label-new"><img src="static/images/rayo.png" alt="" aria-hidden="true" width="48" height="48" loading="lazy" decoding="async">Nuevo</p>
+                    <h3 id="earrings-title">Pendientes<br>Fruit Bowl</h3>
+                    <p>Postes de titanio con cierres de disco</p>
+                    <p><a href="#spring-products">Comprar pendientes Fruit Bowl</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="spring-products" aria-labelledby="products-title">
+            <div class="container">
+                <div class="section-icon">
+                    <img src="static/images/cornoa.png" alt="" aria-hidden="true" width="96" height="96" loading="lazy" decoding="async">
+                </div>
+                <h2 id="products-title">Imprescindibles de primavera</h2>
+                <p>Seleccionados para ti</p>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <div class="product-badges">
+                            <span class="badge badge-new">Nuevo</span>
+                            <span class="badge badge-sale">Oferta</span>
+                        </div>
+                        <img src="static/images/1ºspring must have.jpg" alt="Sudadera Fleece Badge Of Sport Graphic Hoodie" width="900" height="900" loading="lazy" decoding="async">
+                        <p class="product-rating">
+                            <span class="sr-only">Valoración: 4 de 5 estrellas.</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star" aria-hidden="true">&#9733;</span>
+                        </p>
+                        <p>Running</p>
+                        <h3>Fleece Badge Of Sport<br>Graphic Hoodie</h3>
+                        <p>$40.00</p>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-badges">
+                            <span class="badge badge-new">Nuevo</span>
+                        </div>
+                        <img src="static/images/2º spring must have.jpg" alt="Sudadera Men's Rugged Workwear Graphic Hoodie" width="900" height="900" loading="lazy" decoding="async">
+                        <p class="product-rating">
+                            <span class="sr-only">Valoración: 4 de 5 estrellas.</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star" aria-hidden="true">&#9733;</span>
+                        </p>
+                        <p>Ropa exterior</p>
+                        <h3>Men's Rugged Workwear<br>Graphic Hoodie</h3>
+                        <p>$59.99</p>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-badges">
+                            <span class="badge badge-sale">Oferta</span>
+                        </div>
+                        <img src="static/images/3º spirng must have.jpg" alt="Chaqueta Men's Rain Defender Rockland Sherpa-Lined" width="900" height="900" loading="lazy" decoding="async">
+                        <p class="product-rating">
+                            <span class="sr-only">Valoración: 4 de 5 estrellas.</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star" aria-hidden="true">&#9733;</span>
+                        </p>
+                        <p>Sudadera</p>
+                        <h3>Men's Rain Defender<br>Rockland Sherpa-Lined</h3>
+                        <p class="price-new">$40.00</p>
+                        <p class="price-old">$350.99</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="static/images/4º spring must have.png" alt="Chaqueta Men's Sportwear 2019 Hooded Windrunner Jacket" width="309" height="309" loading="lazy" decoding="async">
+                        <p class="product-rating">
+                            <span class="sr-only">Valoración: 4 de 5 estrellas.</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star filled" aria-hidden="true">&#9733;</span>
+                            <span class="star" aria-hidden="true">&#9733;</span>
+                        </p>
+                        <p>Running</p>
+                        <h3>Men's Sportwear 2019<br>Hooded Windrunner Jacket</h3>
+                        <p>$40.00</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="multimedia-practice" aria-labelledby="multimedia-title">
+            <div class="container">
+                <header class="media-head">
+                    <h2 id="multimedia-title">Práctica multimedia</h2>
+                    <p>Archivos multimedia optimizados para carga web y acompañados de alternativas textuales.</p>
+                </header>
+
+                <div class="media-layout">
+                    <article class="media-card media-card--audio" aria-labelledby="audio-title">
+                        <h3 id="audio-title">Audio final</h3>
+                        <p id="audio-desc">Pista de audio final de la práctica, disponible con controles nativos del navegador.</p>
+                        <audio controls preload="none" aria-describedby="audio-desc audio-transcript">
+                            <source src="static/multimedia-audio/pista-final.mp3" type="audio/mpeg">
+                            Tu navegador no soporta la reproducción de audio.
+                        </audio>
+                        <details id="audio-transcript">
+                            <summary>Transcripción del audio</summary>
+                            <p>Pista musical final de la práctica multimedia, sin diálogo hablado relevante.</p>
+                        </details>
+                    </article>
+
+                    <article class="media-card media-card--video" aria-labelledby="video-title">
+                        <h3 id="video-title">Video local</h3>
+                        <p id="video-desc">Montaje de video local de la práctica multimedia, comprimido para funcionar en GitHub Pages.</p>
+                        <video controls preload="none" poster="static/images/video-poster.svg" aria-describedby="video-desc video-transcript">
+                            <source src="static/video-openshot/openshotLocal.mp4" type="video/mp4">
+                            <track kind="captions" src="static/captions/video-local.vtt" srclang="es" label="Subtítulos en español" default>
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                        <details id="video-transcript">
+                            <summary>Descripción del video</summary>
+                            <p>El video muestra el montaje realizado para la práctica multimedia. La pieza incluye una pista sonora y una secuencia visual editada para presentar el resultado final.</p>
+                        </details>
+                    </article>
+
+                    <article class="media-card media-card--logos" aria-labelledby="logo-title">
+                        <h3 id="logo-title">Logo principal</h3>
+                        <div class="logo-grid">
+                            <figure>
+                                <img src="static/images/logo-web.png" alt="Logo principal de ekommart en formato PNG" width="420" height="280" loading="lazy" decoding="async">
+                                <figcaption>Logo web en PNG optimizado</figcaption>
+                            </figure>
+                        </div>
+                    </article>
+
+                    <article class="media-card media-card--svg-initials" aria-labelledby="svg-title">
+                        <h3 id="svg-title">SVG iniciales</h3>
+                        <figure class="svg-preview">
+                            <img src="static/images/logo-vectorial-iniciales.svg" alt="Iniciales vectoriales del proyecto" width="300" height="200" loading="lazy" decoding="async">
+                            <figcaption>Iniciales en SVG</figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="media-card media-card--embed" aria-labelledby="embed-title">
+                        <h3 id="embed-title">Video embebido</h3>
+                        <p id="embed-desc">Video externo insertado desde YouTube con título accesible y carga diferida.</p>
+                        <div class="lite-embed" data-video-id="sF80I-TQiW0" aria-describedby="embed-desc">
+                            <button type="button" class="lite-embed__button" aria-label="Cargar video embebido de la práctica multimedia">
+                                Cargar video embebido
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer id="site-footer">
+        <div class="container">
+            <nav aria-label="Navegación de pie de página">
+                <ul>
+                    <li><a href="#site-header">Inicio</a></li>
+                    <li><a href="#hero-collections">Colecciones</a></li>
+                    <li><a href="#spring-products">Tienda</a></li>
+                    <li><a href="#multimedia-practice">Multimedia</a></li>
+                    <li><a href="../index.html">Índice del proyecto</a></li>
+                </ul>
+            </nav>
+            <p>Copyright &copy; 2020 <span class="footer-brand">ekommart</span>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
