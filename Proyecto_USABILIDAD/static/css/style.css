@@ -548,9 +548,7 @@ body {
 
             &.hero-card--lead {
                 grid-area: lead;
-                background:
-                    linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.56)),
-                    url("../images/Seasons newest arrivals.jpg") center 70% / cover no-repeat;
+                background: url("../images/Seasons newest arrivals.jpg") center 70% / cover no-repeat;
                 color: #ffffff;
                 align-items: center;
                 justify-content: flex-end;
@@ -560,6 +558,7 @@ body {
                 & p,
                 & h3 {
                     color: #ffffff;
+                    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
                 }
 
                 & p:first-child {
@@ -573,9 +572,7 @@ body {
 
             &.hero-card--middle {
                 grid-area: middle;
-                background:
-                    linear-gradient(rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.56)),
-                    url("../images/Real simple.jpg") center 22% / cover no-repeat;
+                background: url("../images/Real simple.jpg") center 22% / cover no-repeat;
                 color: #ffffff;
                 align-items: center;
                 justify-content: flex-start;
@@ -585,6 +582,7 @@ body {
                 & p,
                 & h3 {
                     color: #ffffff;
+                    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
                 }
 
                 & p:first-child {
