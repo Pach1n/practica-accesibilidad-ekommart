@@ -663,7 +663,10 @@ body {
 
                 & a {
                     background: transparent;
-                    padding: 0;
+                    min-height: 44px;
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 0;
                     color: var(--color-cta-green);
                 }
             }
