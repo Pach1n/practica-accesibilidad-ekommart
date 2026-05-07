@@ -1,0 +1,3 @@
+*.zip
+*.tmp
+node_modules/
