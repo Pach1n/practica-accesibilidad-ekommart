@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estructura figma semantico</title>
+    <meta name="description" content="Portada de ekommart con diseno responsive, multimedia y version accesible del proyecto.">
+    <link rel="icon" href="static/images/logo-vectorial-iniciales.svg" type="image/svg+xml">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -41,8 +43,8 @@
                 </div>
 
                 <h1 class="sr-only">ekommart</h1>
-                <a class="brand-logo" href="../index.html" aria-label="Ir al inicio">
-                    <img src="static/images/logo-web.png" alt="Anillo del logo de ekommart">
+                <a class="brand-logo" href="../index.html">
+                    <img src="static/images/logo-web.png" alt="" aria-hidden="true" width="420" height="280">
                     <span class="brand-title">ekommart</span>
                 </a>
 
@@ -109,7 +111,7 @@
         <section id="spring-products">
             <div class="container">
                 <div class="section-icon">
-                    <img src="static/images/cornoa.png" alt="Icono corona">
+                    <img src="static/images/cornoa.png" alt="Icono corona" width="96" height="96">
                 </div>
                 <h2>Spring Must-Haves</h2>
                 <p>Picked for you</p>
@@ -121,7 +123,7 @@
                             <span class="badge badge-sale">SALE</span>
                         </div>
                         <img src="static/images/1ºspring must have.jpg" alt="Fleece Badge of Sport Graphic Hoodie">
-                        <div class="product-rating" aria-label="4 out of 5 stars">
+                        <div class="product-rating" role="img" aria-label="4 out of 5 stars">
                             <span class="star filled">&#9733;</span>
                             <span class="star filled">&#9733;</span>
                             <span class="star filled">&#9733;</span>
@@ -138,7 +140,7 @@
                             <span class="badge badge-new">NEW</span>
                         </div>
                         <img src="static/images/2º spring must have.jpg" alt="Men's Rugged Workwear Graphic Hoodie">
-                        <div class="product-rating" aria-label="4 out of 5 stars">
+                        <div class="product-rating" role="img" aria-label="4 out of 5 stars">
                             <span class="star filled">&#9733;</span>
                             <span class="star filled">&#9733;</span>
                             <span class="star filled">&#9733;</span>
@@ -155,7 +157,7 @@
                             <span class="badge badge-sale">SALE</span>
                         </div>
                         <img src="static/images/3º spirng must have.jpg" alt="Men's Rain Defender Rockland Sherpa-Lined">
-                        <div class="product-rating" aria-label="4 out of 5 stars">
+                        <div class="product-rating" role="img" aria-label="4 out of 5 stars">
                             <span class="star filled">&#9733;</span>
                             <span class="star filled">&#9733;</span>
                             <span class="star filled">&#9733;</span>
@@ -170,7 +172,7 @@
 
                     <article class="product-card">
                         <img src="static/images/4º spring must have.png" alt="Men's Sportwear 2019 Hooded Windrunner Jacket">
-                        <div class="product-rating" aria-label="4 out of 5 stars">
+                        <div class="product-rating" role="img" aria-label="4 out of 5 stars">
                             <span class="star filled">&#9733;</span>
                             <span class="star filled">&#9733;</span>
                             <span class="star filled">&#9733;</span>
@@ -228,14 +230,12 @@
 
                     <article class="media-card media-card--embed">
                         <h3>Video Embebido</h3>
-                        <iframe
-                            src="https://www.youtube.com/embed/sF80I-TQiW0"
-                            title="Video embebido de la práctica multimedia"
-                            loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
-                        </iframe>
+
+                        <div class="lite-embed" data-video-id="sF80I-TQiW0">
+                            <button type="button" class="lite-embed__button" aria-label="Cargar video embebido de la pr?ctica multimedia">
+                                Cargar video embebido
+                            </button>
+                        </div>
                     </article>
                 </div>
             </div>

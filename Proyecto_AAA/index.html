@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ekommart | Proyecto accesible AAA</title>
+    <meta name="description" content="Portada de ekommart con diseno responsive, multimedia y version accesible del proyecto.">
+    <link rel="icon" href="static/images/logo-vectorial-iniciales.svg" type="image/svg+xml">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -43,8 +45,8 @@
                 </div>
 
                 <h1 class="sr-only">ekommart</h1>
-                <a class="brand-logo" href="../index.html" aria-label="Volver al índice de versiones">
-                    <img src="static/images/logo-web.png" alt="" aria-hidden="true">
+                <a class="brand-logo" href="../index.html">
+                    <img src="static/images/logo-web.png" alt="" aria-hidden="true" width="420" height="280">
                     <span class="brand-title">ekommart</span>
                 </a>
 
@@ -110,7 +112,7 @@
         <section id="spring-products" aria-labelledby="products-title">
             <div class="container">
                 <div class="section-icon">
-                    <img src="static/images/cornoa.png" alt="" aria-hidden="true">
+                    <img src="static/images/cornoa.png" alt="" aria-hidden="true" width="96" height="96">
                 </div>
                 <h2 id="products-title">Imprescindibles de primavera</h2>
                 <p>Seleccionados para ti</p>
@@ -246,15 +248,12 @@
                     <article class="media-card media-card--embed" aria-labelledby="embed-title">
                         <h3 id="embed-title">Video embebido</h3>
                         <p id="embed-desc">Video externo insertado desde YouTube con título accesible y carga diferida.</p>
-                        <iframe
-                            src="https://www.youtube.com/embed/sF80I-TQiW0"
-                            title="Video embebido de la práctica multimedia"
-                            loading="lazy"
-                            aria-describedby="embed-desc"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
-                        </iframe>
+
+                        <div class="lite-embed" data-video-id="sF80I-TQiW0">
+                            <button type="button" class="lite-embed__button" aria-label="Cargar video embebido de la pr?ctica multimedia">
+                                Cargar video embebido
+                            </button>
+                        </div>
                     </article>
                 </div>
             </div>

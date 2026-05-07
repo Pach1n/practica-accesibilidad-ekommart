@@ -31,6 +31,7 @@ body {
 
     & img {
         max-width: 100%;
+        height: auto;
         display: block;
     }
 
@@ -953,7 +954,8 @@ body {
 
                 & audio,
                 & video,
-                & iframe {
+                & iframe,
+                & .lite-embed {
                     width: 100%;
                     border-radius: 10px;
                     border: 1px solid #e9edf3;
@@ -965,8 +967,29 @@ body {
                     object-fit: cover;
                 }
 
-                & iframe {
+                & iframe,
+                & .lite-embed {
                     min-height: 280px;
+                }
+
+                & .lite-embed {
+                    display: grid;
+                    place-items: center;
+                    aspect-ratio: 16 / 9;
+                    background:
+                        linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.6)),
+                        url("../images/video-poster.svg") center / cover no-repeat;
+                }
+
+                & .lite-embed__button {
+                    min-width: 44px;
+                    min-height: 44px;
+                    padding: 12px 18px;
+                    border-radius: 6px;
+                    background: #ffffff;
+                    color: var(--color-primary);
+                    border: 2px solid var(--color-primary);
+                    font-weight: 700;
                 }
             }
 
@@ -1063,7 +1086,8 @@ body {
                 & .media-card {
                     padding: 14px;
 
-                    & iframe {
+                    & iframe,
+                    & .lite-embed {
                         min-height: 220px;
                     }
                 }
